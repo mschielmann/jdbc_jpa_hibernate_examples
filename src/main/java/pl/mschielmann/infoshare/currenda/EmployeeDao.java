@@ -1,30 +1,31 @@
 package pl.mschielmann.infoshare.currenda;
 
 import java.util.List;
+import java.util.Optional;
 
-class DbConnector {
+class EmployeeDao {
     void addEmployee(Employee employee) {
 
     }
 
-    void addEmployees(Employee employee) {
+    void addEmployees(List<Employee> employee) {
 
     }
 
-    void updatePosition(Employee employee) {
+    void updatePosition(Long id, Position position) {
 
     }
 
-    void updateLastName(Employee employee) {
+    void updateLastName(Long id, String lastName) {
 
     }
 
-    List<Employee> getEmployees(Employee employee) {
+    List<Employee> getOrderedEmployees(String field, boolean reversed) {
        return null;
     }
 
-    Employee getEmployee(Long id) {
-        return null;
+    Optional<Employee> getEmployee(Long id) {
+        return Optional.empty();
     }
 
     void deleteEmployee(Long id) {

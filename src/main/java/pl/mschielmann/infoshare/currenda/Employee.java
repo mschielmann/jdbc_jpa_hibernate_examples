@@ -42,4 +42,16 @@ class Employee {
     Position getPosition() {
         return position;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", nationalId='" + nationalId + '\'' +
+                ", position=" + position +
+                '}';
+    }
 }
