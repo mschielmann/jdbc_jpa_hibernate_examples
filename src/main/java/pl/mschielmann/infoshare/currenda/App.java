@@ -33,7 +33,8 @@ public class App {
             System.out.println("Employee not found");
         }
 
-        employee = employeeDao.getEmployee(4L);
+        employeeDao.deleteEmployee(employee3.getId());
+        employee = employeeDao.getEmployee(employee3.getId());
         if (employee.isPresent()) {
             System.out.println(employee);
         } else {
